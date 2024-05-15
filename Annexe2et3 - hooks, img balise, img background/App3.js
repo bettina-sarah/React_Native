@@ -5,7 +5,7 @@
  * @format
  */
 
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import {
   StyleSheet,
   Text,
@@ -20,18 +20,18 @@ import {
 
 //usestate: import du react pur !!
 
-function App(){
+function App() {
   const imageLike = require('./images/heart.png')
-  const [like,setLike]=useState(false);
+  const [like, setLike] = useState(false);
   const styleCoeur = like ? styles.aime : null;
-  return(
+  return (
 
     <View style={styles.mainView}>
-      <TouchableOpacity onPress={() => {setLike(!like)}}>
-      <Image source={imageLike} style={[styles.image,styleCoeur]}></Image>
+      <TouchableOpacity onPress={() => { setLike(!like) }}>
+        <Image source={imageLike} style={[styles.image, styleCoeur]}></Image>
       </TouchableOpacity>
 
-          <Text>J'aime?</Text>
+      <Text>J'aime?</Text>
     </View>
   )
 };
@@ -39,19 +39,19 @@ function App(){
 const styles = StyleSheet.create({
 
 
-    mainView:{
-      justifyContent: 'center',
-      alignItems:'center',
-      backgroundColor:'tan',
-      height:"100%",
-      width:"100%",
-    },
-    image:{
-      tintColor:'#f1f1f1'
-    },
-    aime:{
-      tintColor:'red'
-    }
+  mainView: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'tan',
+    height: "100%",
+    width: "100%",
+  },
+  image: {
+    tintColor: '#f1f1f1'
+  },
+  aime: {
+    tintColor: 'red'
+  }
 });
 
 export default App;
