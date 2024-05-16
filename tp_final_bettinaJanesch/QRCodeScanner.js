@@ -8,21 +8,12 @@
 import React, { useState } from 'react';
 import { RNCamera } from 'react-native-camera';
 import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
   Text,
   View,
   TouchableOpacity,
 } from 'react-native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import {NavigationContainer} from '@react-navigation/native';
-
-import App from './App';
-import MontTremblant from './MontTremblant';
-import MontBlanc from './MontBlanc';
-import ValDavid from './ValDavid';
 
 const Stack = createNativeStackNavigator();
 
